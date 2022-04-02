@@ -1,0 +1,79 @@
+.shortcut-container {
+  align-items: center;
+  padding: 1rem 2rem;
+
+  .shortcut-content {
+    display: flex;
+    justify-content: space-between;
+    background-color: #303030;
+    padding: 5px 20px;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+    .shortcut-btn {
+      background-color: rgb(2, 181, 252);
+      border: none;
+      width: 200px;
+      height: 40px;
+      color: #fff;
+      font-size: 1rem;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .shortcut-icons {
+      display: flex;
+
+      .icon-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 2rem;
+        cursor: pointer;
+
+        .icon-0 {
+          background-color: rgb(23, 174, 174);
+        }
+
+        .icon-1 {
+          background-color: rgb(202, 7, 7);
+        }
+
+        .icon-2 {
+          background-color: rgb(231, 197, 5);
+        }
+
+        .icon-3 {
+          background-color: rgb(255, 125, 147);
+        }
+
+        .icon-4 {
+          background-color: green;
+        }
+
+        .icon-5 {
+          background-color: rgb(44, 44, 131);
+        }
+
+        .shortcut-icon {
+          width: 26px;
+          height: 26px;
+          // background-color: aqua;
+          padding: 8px;
+          border-radius: 10px;
+          margin-bottom: 5px;
+          color: rgb(242, 242, 242);
+        }
+
+        .icon-text {
+          font-size: 12px;
+          color: rgb(195, 195, 195);
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
