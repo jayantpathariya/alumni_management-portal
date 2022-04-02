@@ -1,0 +1,47 @@
+.create-room-container {
+  padding: 1rem 2rem;
+  width: 95%;
+
+  .create-room-content {
+    background-color: #303030;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+
+    button {
+      background-color: rgb(200, 130, 0);
+      border: none;
+      border-radius: 10px;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+
+      svg {
+        margin-right: 10px;
+      }
+    }
+
+    .person-image-container {
+      display: flex;
+      justify-content: space-between;
+
+      .person-image-grp {
+        width: 30px;
+        height: 30px;
+        margin: 0 10px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}

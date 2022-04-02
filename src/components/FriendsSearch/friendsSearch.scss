@@ -1,0 +1,80 @@
+.friend-container {
+  padding: 1rem;
+  padding-right: 2rem;
+  width: 40%;
+
+  .friend-content {
+    background-color: #303030;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px 30px;
+    border-radius: 10px;
+
+    .friend-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+
+      input {
+        width: 50%;
+        background-color: rgb(78, 78, 78);
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        height: 20px;
+        padding: 5px 10px;
+        color: rgb(222, 222, 222);
+      }
+
+      .icon {
+        width: 24px;
+        height: 24px;
+        color: rgb(131, 131, 131);
+        cursor: pointer;
+      }
+    }
+
+    .friend-list-container {
+      width: 100%;
+
+      .friends-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        background-color: rgb(78, 78, 78);
+        padding: 6px 12px;
+        border-radius: 10px;
+
+        .friend-info {
+          display: flex;
+          align-items: center;
+
+          img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: 25px;
+          }
+
+          .friend-name {
+            font-size: 1rem;
+            color: rgb(188, 188, 188);
+            font-weight: bold;
+          }
+        }
+
+        .friend-add-btn {
+          padding: 6px 22px;
+          border-radius: 6px;
+          border: none;
+          color: #fff;
+          background-color: rgb(34, 181, 239);
+          font-weight: bold;
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
