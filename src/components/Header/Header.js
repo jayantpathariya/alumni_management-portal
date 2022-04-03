@@ -6,7 +6,7 @@ import { IoSchoolOutline } from 'react-icons/io5';
 import { BiMessage } from 'react-icons/bi';
 import { CgProfile } from 'react-icons/cg';
 import './header.scss';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
   return (
