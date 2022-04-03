@@ -10,7 +10,10 @@ const Post = () => {
     <div className="post-container">
       <div className="post-content">
         <div className="post-header">
-          <img src={images.user} alt="user" />
+          <img
+            src={'https://www.thispersondoesnotexist.com/image'}
+            alt="user"
+          />
 
           <div className="post-content-information">
             <div className="post-info">
@@ -22,7 +25,13 @@ const Post = () => {
             </div>
             <hr />
             <div className="post-img-section">
-              <img className="post-img" src={images.hero} alt="post" />
+              <img
+                className="post-img"
+                src={
+                  'https://images.unsplash.com/photo-1571260899304-425eee4c7efc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80'
+                }
+                alt="post"
+              />
             </div>
           </div>
         </div>
