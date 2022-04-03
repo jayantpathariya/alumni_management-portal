@@ -1,5 +1,4 @@
 import React from 'react';
-import { images } from '../../assets';
 import './heroImage.scss';
 
 const HeroImage = () => {

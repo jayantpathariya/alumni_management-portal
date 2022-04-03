@@ -10,8 +10,6 @@ const storyImages = [
 ];
 
 const Story = () => {
-  const [stories, setStories] = useState(storyImages);
-
   return (
     <div className="story-container">
       <div className="story">
@@ -21,7 +19,7 @@ const Story = () => {
           <div className="add-story-text">Create Your Own Story</div>
         </div>
       </div>
-      {stories.map((story, index) => {
+      {storyImages.map((story, index) => {
         return (
           <div key={index} className="story">
             <img className="story-img" src={story} alt="story" />
