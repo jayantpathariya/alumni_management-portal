@@ -1,5 +1,4 @@
 import React from 'react';
-import { images } from '../../assets';
 import './post.scss';
 import { BsThreeDotsVertical } from 'react-icons/bs';
 import { AiFillLike } from 'react-icons/ai';

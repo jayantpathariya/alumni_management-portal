@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { images } from '../../assets';
+import React from 'react';
 import './story.scss';
 import { AiOutlinePlusCircle } from 'react-icons/ai';
 
