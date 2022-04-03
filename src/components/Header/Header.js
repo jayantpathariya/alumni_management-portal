@@ -9,14 +9,6 @@ import './header.scss';
 import { NavLink, useNavigate } from 'react-router-dom';
 
 const Header = () => {
-  const navigate = useNavigate();
-
-  let activeStyle = {
-    textDecoration: 'underline',
-  };
-
-  let activeClassName = 'underline';
-
   return (
     <div className="header">
       <div className="header-content">

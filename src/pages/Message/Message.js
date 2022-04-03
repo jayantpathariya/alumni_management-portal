@@ -2,7 +2,6 @@ import React from 'react';
 import CreateRoom from '../../components/CreateRoom/CreateRoom';
 import FriendsSearch from '../../components/FriendsSearch/FriendsSearch';
 import MessageList from '../../components/MessageList/MessageList';
-import Post from '../../components/Post/Post';
 import Shortcut from '../../components/Shortcut/Shortcut';
 import Story from '../../components/Story/Story';
 import './message.scss';

@@ -48,7 +48,7 @@ const MessageList = () => {
             <div key={index} className="message-container">
               <div className="message-content">
                 <div className="message-image-container">
-                  <img src={item.grpImage} alt="group-image" />
+                  <img src={item.grpImage} alt="group" />
                   <div className="online-dot"></div>
                 </div>
                 <div className="message-content">
