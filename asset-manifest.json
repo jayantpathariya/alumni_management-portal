@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/alumni_management_web_portal/static/css/main.bb6f1a62.css",
+    "main.js": "/alumni_management_web_portal/static/js/main.019cfa98.js",
+    "static/js/787.6ecedfbc.chunk.js": "/alumni_management_web_portal/static/js/787.6ecedfbc.chunk.js",
+    "static/media/pexels-stanley-morales-3186386.jpg": "/alumni_management_web_portal/static/media/pexels-stanley-morales-3186386.27dd50034b71b9c304a0.jpg",
+    "static/media/pexels-pixabay-267885.jpg": "/alumni_management_web_portal/static/media/pexels-pixabay-267885.be8d6a2f580072116591.jpg",
+    "static/media/image (1).jpg": "/alumni_management_web_portal/static/media/image (1).cfbb82bc6cf5ef092114.jpg",
+    "static/media/logo.png": "/alumni_management_web_portal/static/media/logo.56a18799accbdc05fdcf.png",
+    "static/media/logo.svg": "/alumni_management_web_portal/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/alumni_management_web_portal/index.html",
+    "main.bb6f1a62.css.map": "/alumni_management_web_portal/static/css/main.bb6f1a62.css.map",
+    "main.019cfa98.js.map": "/alumni_management_web_portal/static/js/main.019cfa98.js.map",
+    "787.6ecedfbc.chunk.js.map": "/alumni_management_web_portal/static/js/787.6ecedfbc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bb6f1a62.css",
+    "static/js/main.019cfa98.js"
+  ]
+}
