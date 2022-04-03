@@ -6,8 +6,17 @@ import { IoSchoolOutline } from 'react-icons/io5';
 import { BiMessage } from 'react-icons/bi';
 import { CgProfile } from 'react-icons/cg';
 import './header.scss';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 const Header = () => {
+  const navigate = useNavigate();
+
+  let activeStyle = {
+    textDecoration: 'underline',
+  };
+
+  let activeClassName = 'underline';
+
   return (
     <div className="header">
       <div className="header-content">
@@ -15,10 +24,38 @@ const Header = () => {
           <img src={images.logo} alt="" />
         </div>
         <div className="icons">
-          <AiOutlineHome className="icon active-link" />
-          <AiOutlineYoutube className="icon" />
-          <IoSchoolOutline className="icon" />
-          <BiMessage className="icon" />
+          <NavLink
+            to="/"
+            className={(state) => {
+              if (state.isActive) {
+                return 'icon active-link';
+              }
+              return 'icon';
+            }}
+          >
+            <AiOutlineHome
+              style={{
+                fontSize: '2.5rem',
+              }}
+            />
+          </NavLink>
+          <AiOutlineYoutube className="inactive-icon" />
+          <IoSchoolOutline className="inactive-icon" />
+          <NavLink
+            to="/message"
+            className={(state) => {
+              if (state.isActive) {
+                return 'icon active-link';
+              }
+              return 'icon';
+            }}
+          >
+            <BiMessage
+              style={{
+                fontSize: '2.5rem',
+              }}
+            />
+          </NavLink>
           <input type="text" placeholder="Search" />
           <CgProfile className="profile" />
         </div>
