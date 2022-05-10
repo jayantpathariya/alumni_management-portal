@@ -29,6 +29,40 @@
       }
     }
 
+    .post-options {
+      margin-top: 10px;
+      display: flex;
+      width: 100%;
+
+      input {
+        width: 90%;
+        background-color: rgb(78, 78, 78);
+        border: none;
+        border-radius: 6px;
+        padding: 5px 20px;
+        height: 25px;
+        margin-right: 10px;
+        outline: none;
+        color: rgb(197, 197, 197);
+
+        &::placeholder {
+          color: rgb(197, 197, 197);
+        }
+      }
+
+      .post-btn {
+        width: 10%;
+        background-color: rgb(78, 78, 78);
+        border: none;
+        border-radius: 6px;
+        padding: 5px 10px;
+        color: rgb(197, 197, 197);
+        font-size: 1.2rem;
+        cursor: pointer;
+        font-weight: bold;
+      }
+    }
+
     hr {
       margin: 20px 0;
     }

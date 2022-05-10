@@ -1,17 +1,17 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useSelector } from 'react-redux';
+import { BrowserRouter, useNavigate } from 'react-router-dom';
 import Header from '../components/Header/Header';
-import Home from '../pages/Home/Home';
-import Message from '../pages/Message/Message';
+import AppRoute from './app';
+import PublicRoute from './public';
 
 const Routing = () => {
+  const { userDetails } = useSelector((state) => state.loginReducer);
+
   return (
     <BrowserRouter>
-      <Header />
-      <Routes>
-        <Route index element={<Home />} />
-        <Route path="message" element={<Message />} />
-      </Routes>
+      {userDetails.token && <Header />}
+      {userDetails.token ? <AppRoute /> : <PublicRoute />}
     </BrowserRouter>
   );
 };

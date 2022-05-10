@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import CreatePost from '../../components/CreatePost/CreatePost';
 import CreateRoom from '../../components/CreateRoom/CreateRoom';
 import FriendsSearch from '../../components/FriendsSearch/FriendsSearch';
@@ -9,16 +9,22 @@ import Story from '../../components/Story/Story';
 import './home.scss';
 
 const Home = () => {
+  const [isPostUpdated, setIsPostUpdated] = useState(false);
+
+  const getPostUpdated = (value) => {
+    setIsPostUpdated(value);
+  };
+
   return (
     <div className="home-container">
       <HeroImage />
       <Shortcut />
       <Story />
-      <CreatePost />
+      <CreatePost getPostUpdated={getPostUpdated} />
       <div className="home-post-container">
         <div className="home-post-content">
           <CreateRoom />
-          <Post />
+          <Post isPostUpdated={isPostUpdated} />
         </div>
         <FriendsSearch />
       </div>

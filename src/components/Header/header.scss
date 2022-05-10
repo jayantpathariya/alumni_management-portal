@@ -51,6 +51,21 @@
       cursor: pointer;
     }
 
+    .userProfile {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .user-img {
+        width: 44px;
+        height: 44px;
+        margin-left: 3rem;
+        cursor: pointer;
+        border-radius: 50%;
+      }
+    }
+
     input {
       width: 400px;
       height: 36px;

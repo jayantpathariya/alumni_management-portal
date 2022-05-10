@@ -20,6 +20,7 @@
       }
 
       .post-content-information {
+        width: 100%;
         .post-info {
           display: flex;
           align-items: center;
@@ -43,6 +44,19 @@
             height: 22px;
             color: rgb(131, 131, 131);
             cursor: pointer;
+          }
+        }
+
+        .post-desc-section {
+          width: 100%;
+
+          .post-description {
+            font-size: 1rem;
+            font-weight: normal;
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+            margin-bottom: 10px;
+            margin-top: 10px;
           }
         }
 
