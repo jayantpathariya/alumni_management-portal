@@ -1,17 +1,31 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useSelector } from 'react-redux';
-import { BrowserRouter, useNavigate } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import Header from '../components/Header/Header';
 import AppRoute from './app';
 import PublicRoute from './public';
+import AdminRoute from './admin';
 
 const Routing = () => {
   const { userDetails } = useSelector((state) => state.loginReducer);
+  const admin = userDetails?.user?.isAdmin;
 
   return (
     <BrowserRouter>
-      {userDetails.token && <Header />}
-      {userDetails.token ? <AppRoute /> : <PublicRoute />}
+      {userDetails.token && admin ? (
+        <>
+          <AdminRoute />
+        </>
+      ) : userDetails.token ? (
+        <>
+          <Header />
+          <AppRoute />
+        </>
+      ) : (
+        <>
+          <PublicRoute />
+        </>
+      )}
     </BrowserRouter>
   );
 };

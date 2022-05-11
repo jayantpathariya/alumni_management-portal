@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux';
-import { Route, Routes, useNavigate } from 'react-router-dom';
+import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import Login from '../pages/Login/Login';
+import Register from '../pages/Register/Register';
 
 const PublicRoute = () => {
   const { userDetails } = useSelector((state) => state.loginReducer);
@@ -18,6 +19,7 @@ const PublicRoute = () => {
   return (
     <Routes>
       <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
     </Routes>
   );
 };

@@ -1,5 +1,6 @@
 import React from 'react';
 import './messageList.scss';
+import SendIcon from '@mui/icons-material/Send';
 
 const list = [
   {
@@ -39,11 +40,81 @@ const list = [
   },
 ];
 
-const MessageList = () => {
+const MessageList = ({ own }) => {
   return (
     <div className="message-list-container">
       <div className="message-list-content">
-        {list.map((item, index) => {
+        <div className="msg-container">
+          <div className="msg-header">
+            <div className="msg-header-con">
+              <img
+                src="https://www.kindpng.com/picc/m/24-248253_user-profile-default-image-png-clipart-png-download.png"
+                alt="user"
+              />
+              <div className="msg-header-content">
+                <h3 className="user-name">Jayant</h3>
+                <p className="user-status">Team Lead | Wipro</p>
+              </div>
+            </div>
+          </div>
+          <div className="msg-body">
+            <div className="chatBoxTop">
+              <div className="msg">
+                <div className="msgTop">
+                  <img
+                    className="messageImg"
+                    src="https://images.pexels.com/photos/3686769/pexels-photo-3686769.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                    alt=""
+                  />
+                  <p className="msgText">Hello this is message</p>
+                </div>
+                <div className="msgBottom">1 hour ago</div>
+              </div>
+              <div className="msg own">
+                <div className="msgTop">
+                  <img
+                    className="messageImg"
+                    src="https://images.pexels.com/photos/3686769/pexels-photo-3686769.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                    alt=""
+                  />
+                  <p className="msgText">Hello this is message</p>
+                </div>
+                <div className="msgBottom">1 hour ago</div>
+              </div>
+              <div className="msg">
+                <div className="msgTop">
+                  <img
+                    className="messageImg"
+                    src="https://images.pexels.com/photos/3686769/pexels-photo-3686769.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                    alt=""
+                  />
+                  <p className="msgText">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Accusantium molestias natus reiciendis pariatur eveniet
+                    recusandae iusto nemo distinctio! Doloribus eius obcaecati
+                    amet dolore earum et harum ut sed ad corrupti!
+                  </p>
+                </div>
+                <div className="msgBottom">1 hour ago</div>
+              </div>
+            </div>
+            <div className="chatBoxBottom"></div>
+          </div>
+          <div className="msg-send">
+            <input type="text" placeholder="Message" />
+            <button>
+              <SendIcon />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default MessageList;
+{
+  /* {list.map((item, index) => {
           return (
             <div key={index} className="message-container">
               <div className="message-content">
@@ -61,10 +132,5 @@ const MessageList = () => {
               </div>
             </div>
           );
-        })}
-      </div>
-    </div>
-  );
-};
-
-export default MessageList;
+        })} */
+}

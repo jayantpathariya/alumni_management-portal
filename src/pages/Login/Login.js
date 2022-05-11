@@ -4,9 +4,11 @@ import { useFormik } from 'formik';
 import { request } from '../../service/customAxios';
 import { useDispatch } from 'react-redux';
 import { addLogin } from '../../redux/actions/login';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const initialValues = {
     email: '',
@@ -29,13 +31,21 @@ const Login = () => {
         url: '/api/auth/login',
         data: values,
       });
-      console.log('res', res.data);
-      dispatch(
-        addLogin({
-          user: res.data.user,
-          token: res.data.token,
-        })
-      );
+      console.log(res);
+      if (res.data.message) {
+        alert(res.data.message);
+      } else {
+        if (res.data.user.isApproved) {
+          dispatch(
+            addLogin({
+              user: res.data.user,
+              token: res.data.token,
+            })
+          );
+        } else {
+          alert('Your account is not approved yet');
+        }
+      }
     } catch (error) {
       console.log(error);
     }
@@ -92,6 +102,9 @@ const Login = () => {
           <button type="submit" className="button">
             Log In
           </button>
+          <h5 className="login1" onClick={() => navigate('/register')}>
+            Create an account
+          </h5>
           <h5 className="login1">Can't Login ?</h5>
           <h5 className="login1" id="poli">
             Privacy & Policy
